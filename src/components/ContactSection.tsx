@@ -46,13 +46,19 @@ const ContactSection = () => {
 
         {/* Footer */}
         <div className="mt-32 pt-8 border-t border-border/30 flex flex-col md:flex-row justify-between items-center gap-4">
-          <span className="text-muted-foreground text-xs">© 2024 ARQSTUDIO. Todos os direitos reservados.</span>
+          <span className="text-muted-foreground text-xs">
+            Desenvolvido por{" "}
+            <a href="https://www.instagram.com/debuguei" target="_blank" rel="noopener noreferrer" data-cursor-hover className="text-primary hover:text-primary/80 transition-colors font-medium">
+              Debuguei
+            </a>
+          </span>
           <div className="flex gap-6">
-            {["Instagram", "LinkedIn", "Behance"].map((s) => (
-              <a key={s} href="#" data-cursor-hover className="text-muted-foreground text-xs hover:text-primary transition-colors">
-                {s}
-              </a>
-            ))}
+            <a href="https://www.instagram.com/debuguei" target="_blank" rel="noopener noreferrer" data-cursor-hover className="text-muted-foreground text-xs hover:text-primary transition-colors">
+              Instagram
+            </a>
+            <a href="https://www.linkedin.com/in/alex-santos-97977b29b/" target="_blank" rel="noopener noreferrer" data-cursor-hover className="text-muted-foreground text-xs hover:text-primary transition-colors">
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
