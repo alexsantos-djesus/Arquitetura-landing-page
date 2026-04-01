@@ -128,11 +128,7 @@ const Scene = ({ boxes, selectedId, onSelect, onPlaceBlock }: {
         />
       ))}
 
-      <GizmoHelper alignment="bottom-right" margin={[60, 60]}>
-        <GizmoViewport labelColor="white" axisHeadScale={1} />
-      </GizmoHelper>
-
-      <Environment preset="city" />
+      <hemisphereLight intensity={0.3} groundColor="hsl(0, 0%, 10%)" />
       <fog attach="fog" args={["hsl(0, 0%, 4%)", 20, 50]} />
     </>
   );
