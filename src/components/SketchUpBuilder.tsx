@@ -1,4 +1,4 @@
-import { Canvas } from "@react-three/fiber";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls, Grid, PerspectiveCamera } from "@react-three/drei";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useRef, useCallback } from "react";
