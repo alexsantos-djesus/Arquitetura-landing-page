@@ -14,7 +14,7 @@ const AboutSection = () => {
   const x = useTransform(scrollYProgress, [0, 1], [-50, 50]);
 
   return (
-    <section ref={ref} className="relative py-32 md:py-48 overflow-hidden">
+    <section id="sobre" ref={ref} className="relative py-32 md:py-48 overflow-hidden">
       {/* Large background text */}
       <motion.div
         style={{ x }}
