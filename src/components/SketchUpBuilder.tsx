@@ -1,5 +1,5 @@
-import { Canvas, useThree, useFrame } from "@react-three/fiber";
-import { OrbitControls, Grid, GizmoHelper, GizmoViewport, Environment, PerspectiveCamera } from "@react-three/drei";
+import { Canvas, useFrame } from "@react-three/fiber";
+import { OrbitControls, Grid, PerspectiveCamera } from "@react-three/drei";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useRef, useCallback } from "react";
 import * as THREE from "three";
@@ -128,11 +128,7 @@ const Scene = ({ boxes, selectedId, onSelect, onPlaceBlock }: {
         />
       ))}
 
-      <GizmoHelper alignment="bottom-right" margin={[60, 60]}>
-        <GizmoViewport labelColor="white" axisHeadScale={1} />
-      </GizmoHelper>
-
-      <Environment preset="city" />
+      <hemisphereLight intensity={0.3} groundColor="hsl(0, 0%, 10%)" />
       <fog attach="fog" args={["hsl(0, 0%, 4%)", 20, 50]} />
     </>
   );
